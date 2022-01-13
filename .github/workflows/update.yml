@@ -18,7 +18,7 @@ jobs:
         id: update
         run: |
           pip install --upgrade pip setuptools wheel
-          pip install -e .[align,export,charts]
+          pip install -e .[align,export,charts,ndex]
           bioregistry update
         env:
           BIOPORTAL_API_KEY: ${{ secrets.BIOPORTAL_API_KEY }}
