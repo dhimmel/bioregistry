@@ -113,6 +113,12 @@ bioregistry_schema_terms = [
         "hasResponsible",
         "Connect an entity to its responsible person",
     ),
+    Term(
+        "0000020",
+        "Property",
+        "hasReviewer",
+        "Connect an entity to its the person who reviewed it",
+    ),
 ]
 bioregistry_collection = rdflib.namespace.Namespace("https://bioregistry.io/collection/")
 bioregistry_resource = rdflib.namespace.Namespace("https://bioregistry.io/registry/")
